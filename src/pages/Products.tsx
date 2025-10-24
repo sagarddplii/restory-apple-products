@@ -11,15 +11,15 @@ import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 
 const Products = () => {
-  const [priceRange, setPriceRange] = useState([0, 2000]);
+  const [priceRange, setPriceRange] = useState([25000, 150000]);
 
   const products = [
-    { id: 1, name: "iPhone 14 Pro", category: "iphone", condition: "Excellent", price: 799, image: "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=500&q=80" },
-    { id: 2, name: "MacBook Pro M2", category: "macbook", condition: "Very Good", price: 1499, image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80" },
-    { id: 3, name: "iPad Air", category: "ipad", condition: "Excellent", price: 499, image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&q=80" },
-    { id: 4, name: "iPhone 13", category: "iphone", condition: "Good", price: 599, image: "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=500&q=80" },
-    { id: 5, name: "Apple Watch Series 8", category: "watch", condition: "Excellent", price: 349, image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&q=80" },
-    { id: 6, name: "MacBook Air M1", category: "macbook", condition: "Very Good", price: 899, image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500&q=80" },
+    { id: 1, name: "iPhone 14 Pro", category: "iphone", condition: "Excellent", price: 66000, image: "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=500&q=80" },
+    { id: 2, name: "MacBook Pro M2", category: "macbook", condition: "Very Good", price: 125000, image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&q=80" },
+    { id: 3, name: "iPad Air", category: "ipad", condition: "Excellent", price: 41000, image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&q=80" },
+    { id: 4, name: "iPhone 13", category: "iphone", condition: "Good", price: 50000, image: "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=500&q=80" },
+    { id: 5, name: "Apple Watch Series 8", category: "watch", condition: "Excellent", price: 29000, image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&q=80" },
+    { id: 6, name: "MacBook Air M1", category: "macbook", condition: "Very Good", price: 75000, image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500&q=80" },
   ];
 
   return (
@@ -84,12 +84,12 @@ const Products = () => {
 
                   <div>
                     <label className="text-sm font-medium mb-4 block">
-                      Price Range: ${priceRange[0]} - ${priceRange[1]}
+                      Price Range: ₹{priceRange[0].toLocaleString()} - ₹{priceRange[1].toLocaleString()}
                     </label>
                     <Slider
-                      min={0}
-                      max={2000}
-                      step={50}
+                      min={25000}
+                      max={150000}
+                      step={5000}
                       value={priceRange}
                       onValueChange={setPriceRange}
                       className="mb-2"

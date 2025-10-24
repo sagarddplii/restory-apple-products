@@ -12,8 +12,8 @@ const ProductDetail = () => {
   const product = {
     name: "iPhone 14 Pro",
     condition: "Excellent",
-    price: 799,
-    originalPrice: 999,
+    price: 66000,
+    originalPrice: 83000,
     images: [
       "https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=800&q=80",
       "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?w=800&q=80",
@@ -78,9 +78,9 @@ const ProductDetail = () => {
             </div>
 
             <div className="flex items-baseline space-x-4">
-              <span className="text-5xl font-bold text-gradient">${product.price}</span>
-              <span className="text-2xl text-muted-foreground line-through">${product.originalPrice}</span>
-              <Badge variant="secondary" className="text-sm">Save ${product.originalPrice - product.price}</Badge>
+              <span className="text-5xl font-bold text-gradient">₹{product.price.toLocaleString()}</span>
+              <span className="text-2xl text-muted-foreground line-through">₹{product.originalPrice.toLocaleString()}</span>
+              <Badge variant="secondary" className="text-sm">Save ₹{(product.originalPrice - product.price).toLocaleString()}</Badge>
             </div>
 
             <div className="space-y-3">
