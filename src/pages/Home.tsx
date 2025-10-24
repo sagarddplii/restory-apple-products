@@ -32,7 +32,7 @@ const Home = () => {
     {
       icon: TrendingUp,
       title: "Best Prices",
-      description: "Save up to 40% on like-new Apple products - Starting ₹25,000",
+      description: "Save up to 40% on like-new Apple products",
     },
   ];
 
@@ -166,8 +166,6 @@ const Home = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               Save Smart, Stay Assured with <span className="text-gradient font-semibold">3-Month Peace of Mind</span>
-              <br />
-              <span className="text-lg text-green-600 font-medium">Starting from ₹25,000 - Up to 40% Off!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
