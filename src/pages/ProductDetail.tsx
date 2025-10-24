@@ -54,16 +54,6 @@ const ProductDetail = () => {
                 3-Month Certified Warranty
               </Badge>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {product.images.slice(1).map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img}
-                  alt={`${product.name} ${idx + 2}`}
-                  className="w-full h-32 object-cover rounded-xl cursor-pointer hover:opacity-75 transition"
-                />
-              ))}
-            </div>
           </motion.div>
 
           {/* Product Info */}
