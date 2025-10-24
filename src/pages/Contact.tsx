@@ -196,8 +196,8 @@ const Contact = () => {
                       <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                         <span className="text-green-600 font-bold">✓</span>
                       </div>
-                      <h4 className="font-medium">Certified Quality</h4>
-                      <p className="text-sm text-muted-foreground">Thoroughly tested devices</p>
+                      <h4 className="font-medium">Original Quality</h4>
+                      <p className="text-sm text-muted-foreground">Never opened or repaired devices</p>
                     </div>
                     <div className="text-center">
                       <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">

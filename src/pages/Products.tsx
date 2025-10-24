@@ -32,8 +32,8 @@ const Products = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
         >
-          <h1 className="text-4xl font-bold mb-4">Certified Pre-Owned Apple Products</h1>
-          <p className="text-muted-foreground text-lg">Browse our collection of certified devices</p>
+          <h1 className="text-4xl font-bold mb-4">Original Pre-Owned Apple Products</h1>
+          <p className="text-muted-foreground text-lg">Browse our collection of original devices</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">

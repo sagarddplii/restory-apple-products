@@ -26,8 +26,8 @@ const Home = () => {
     },
     {
       icon: CheckCircle,
-      title: "Certified Quality",
-      description: "Thoroughly tested and professionally restored",
+      title: "Original Quality",
+      description: "Never opened or repaired - original condition only",
     },
     {
       icon: TrendingUp,
@@ -162,14 +162,14 @@ const Home = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Certified Pre-Owned Apple Products
+              Original Pre-Owned Apple Products
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               Save Smart, Stay Assured with <span className="text-gradient font-semibold">3-Month Peace of Mind</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
-                <Link to="/products">Shop Certified</Link>
+                <Link to="/products">Shop Original</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-lg px-8">
                 <Link to="/sell">Sell Your Device</Link>
